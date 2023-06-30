@@ -1,5 +1,6 @@
 import React from 'react'
 import { useParams, useOutletContext } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 function MovieDetails() {
     const { id } = useParams();
@@ -11,6 +12,9 @@ function MovieDetails() {
             <br />
             <img src={movie.posterUrl} alt={movie.title} />
             <br />
+            <Link to={`/movie/${movie.id}/edit`}>
+                <button>Edit Movie</button>
+            </Link>
             <h1>{movie.title} - {movie.year}</h1>
             <p>Runtime: {movie.runtime}</p>
             <p>Genres: {movie.genres}</p>
