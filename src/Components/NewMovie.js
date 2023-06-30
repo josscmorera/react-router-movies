@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { useNavigate, useOutletContext } from 'react-router-dom';
-import { v4 as uuidv4 } from 'uuid';
+import React, { useState } from 'react'
+import { useNavigate, useOutletContext } from 'react-router-dom'
+import { v4 as uuidv4 } from 'uuid'
 
 function NewMovie() {
     const navigate = useNavigate();
@@ -65,7 +65,7 @@ function NewMovie() {
             </label>
             <button type="submit">Add Movie</button>
         </form>
-    );
+    )
 }
 
-export default NewMovie;
+export default NewMovie
