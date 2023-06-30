@@ -4,6 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import Movies from './Layout/Movies';
+import NewMovie from './Components/NewMovie';
+import EditMovie from './Components/EditMovie';
+import MovieDetails from './Components/MovieDetails';
 
 const router = createBrowserRouter([
   {
@@ -12,21 +16,21 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Home />,
+        element: <Movies />,
       },
       {
-        path: 'movie/add/:id',
+        path: 'movie/add/',
         element: <NewMovie />,
       },
       {
-        path: 'movie/:id/edit',
+        path: 'movie/:id/',
+        element: <MovieDetails />,
+      },
+      {
+        path: 'movie/:id/edit/',
         element: <EditMovie />,
       }
     ]
-  },
-  {
-    path: '/home',
-    element: <Home />,
   },
 ]);
 
