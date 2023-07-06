@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, useOutletContext } from 'react-router-dom'
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 function MovieDetails() {
     const { id } = useParams();

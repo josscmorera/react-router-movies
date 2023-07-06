@@ -2,7 +2,7 @@ import React from 'react'
 import { useOutletContext } from 'react-router-dom';
 import MovieCard from '../Components/MovieCard';
 
-const Movies = () =>{
+const Movies = () => {
     const { movies } = useOutletContext();
 
   return (
@@ -16,18 +16,3 @@ const Movies = () =>{
 }
 
 export default Movies
-
-
-// const Home = () => {
-//     const { blogs } = useOutletContext();
-
-//     return (
-//         <div>
-//             {blogs && blogs.map((blog) => (
-//                 <BlogCard key={blog.id} blog={blog} />
-//             ))}
-//         </div>
-//     );
-// };
-
-// export default Home;
